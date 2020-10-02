@@ -20,6 +20,10 @@ const typeDefs = gql(`
         updateComment(id: ID!, data: UpdateCommentInput! ): Comment!
     }
 
+    type Subscription {
+        post: Post!
+    }
+
     input CreateUserInput{
         name: String!
         email: String!
